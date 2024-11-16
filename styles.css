@@ -1,0 +1,39 @@
+:root{
+    --background: #eaedf4;
+    --white: #f9f9f9;
+    --bluegray: #313749;
+    --darkblue: #147cb0;
+    --darkpurple: #523f7c;
+    --lightblue: #2193cc;
+    --lightpurple: #785db2;
+    --gray: #85888C;
+    
+    --skillfill: rgb(124, 77, 226, 0.3);
+    --skilltext: #7c4de2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Verdana", sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+}
+
+model-viewer {
+    width: 400px;
+    height: auto;
+}
