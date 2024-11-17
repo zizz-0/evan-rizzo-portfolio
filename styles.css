@@ -1,15 +1,8 @@
 :root{
-    --background: #eaedf4;
-    --white: #f9f9f9;
-    --bluegray: #313749;
-    --darkblue: #147cb0;
-    --darkpurple: #523f7c;
-    --lightblue: #2193cc;
-    --lightpurple: #785db2;
-    --gray: #85888C;
-    
-    --skillfill: rgb(124, 77, 226, 0.3);
-    --skilltext: #7c4de2;
+    --white: #eaedf4;
+    --background: #151f35;
+    --blue: #172576;
+    --pink: #FF93C9;
 }
 
 *{
@@ -19,7 +12,6 @@
 }
 
 body {
-    background-color: var(--background);
     font-family: "Verdana", sans-serif;
 }
 
@@ -33,7 +25,5 @@ a {
     text-decoration: none;
 }
 
-model-viewer {
-    width: 400px;
-    height: auto;
+main {
 }
