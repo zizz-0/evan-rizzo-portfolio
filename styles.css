@@ -1,6 +1,7 @@
 :root{
     --white: #eaedf4;
     --background: #151f35;
+    --lightbackground: #c9d4ec;
     --blue: #172576;
     --pink: #FF93C9;
 }
@@ -9,10 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: "Verdana", sans-serif;
+    color: var(--white);
 }
 
 .row::after {
@@ -25,5 +24,77 @@ a {
     text-decoration: none;
 }
 
-main {
+.bg-nav {
+    background-color: var(--lightbackground);
+}
+
+.bg-main {
+    background-color: var(--background);
+}
+
+.intro h1 {
+    font-size: 2em;
+    padding-top: 15px;
+    color: var(--pink);
+}
+
+.intro h2 {
+    font-size: 1.2em;
+}
+
+.link-logos {
+    padding-top: 15px;
+}
+
+.link-logos span {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+.resume {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+
+.resume:hover {
+    color: var(--pink);
+    text-decoration: underline;
+    border: 2px solid var(--pink);
+}
+
+.circle-img {
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-img img {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+@media (min-width: 576px) {
+    .intro {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro-left {
+        width: 50%;
+        margin-left: 200px;
+        margin-top: 90px;
+    }
+
+    .intro-right {
+        width: 50%;
+        margin-right: 200px;
+        margin-top: 100px;
+    }
 }
