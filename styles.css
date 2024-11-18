@@ -32,13 +32,13 @@ a {
     background-color: var(--background);
 }
 
-.intro h1 {
+#about h1 {
     font-size: 2em;
     padding-top: 15px;
     color: var(--pink);
 }
 
-.intro h2 {
+#about h2 {
     font-size: 1.2em;
 }
 
@@ -61,8 +61,15 @@ a {
 
 .resume:hover {
     color: var(--pink);
-    text-decoration: underline;
     border: 2px solid var(--pink);
+}
+
+.mail:hover {
+    content:url("assets/imgs/logos/gmail-pink.png");
+}
+
+.linkedin:hover {
+    content:url("assets/imgs/logos/linkedin-pink.png");
 }
 
 .circle-img {
@@ -80,19 +87,63 @@ a {
     width: auto;
 }
 
+#skills h1 {
+    font-size: 2em;
+    padding-top: 15px;
+    color: var(--pink);
+    text-align: center;
+    padding-top: 75px;
+}
+
+#skills hr {
+    border: 2px solid var(--pink);
+    width: 50%;
+    margin: auto;
+}
+
+.big-skills-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.skill-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightbackground);
+    border-radius: 50px;
+}
+
+.skill-icon img {
+    padding: 10px;
+}
+
 @media (min-width: 576px) {
-    .intro {
+    #about {
         display: flex;
         flex-direction: row;
     }
 
-    .intro-left {
+    .about-left {
         width: 50%;
         margin-left: 200px;
         margin-top: 90px;
     }
 
-    .intro-right {
+    .about-right {
         width: 50%;
         margin-right: 200px;
         margin-top: 100px;
