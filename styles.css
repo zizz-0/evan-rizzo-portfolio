@@ -2,6 +2,7 @@
     --white: #eaedf4;
     --background: #151f35;
     --lightbackground: #c9d4ec;
+    --lighttext: #b7c0d3;
     --blue: #172576;
     --pink: #FF93C9;
 }
@@ -116,6 +117,77 @@ a {
     width: 90%;
 }
 
+.text-c-muted {
+    color: var(--lighttext);
+}
+
+#experience {
+    padding-left: 120px;
+    width: 80%;
+}
+
+#experience h1 {
+    padding-top: 120px;
+    color: var(--pink);
+}
+
+#experience hr {
+    border: 2px solid var(--pink);
+    padding-left: 100;
+    width: 50%;
+}
+
+.exp-title b {
+    color: var(--pink);
+}
+
+.task-list {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.task-list:after {
+    content: "";
+    position: absolute;
+    background: var(--pink);
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+}
+
+.task-list li {
+    margin-bottom: 30px;
+    padding-left: 70px;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 42px;
+        width: 42px;
+        border-radius: 50%;
+        border: 2px solid var(--pink);
+        background-color: var(--pink);
+        position: absolute;
+        left: 0;
+    }
+}
+
+.task-list li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .exp-date {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
 @media (min-width: 576px) {
     #about {
         display: flex;
@@ -136,5 +208,10 @@ a {
 
     .skills-width {
         width: 75%;
+    }
+
+    .exp-date {     
+        border-left: 2px solid var(--white);
+        padding-left: 5px;
     }
 }
