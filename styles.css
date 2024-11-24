@@ -186,6 +186,59 @@ a {
         display: block;
         margin-bottom: 10px;
     }
+
+    #experience {
+        padding-left: 20px;
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    #experience h1 {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #experience hr {
+        border: 2px solid var(--pink);
+        width: 300px;
+        margin: auto;
+    }
+
+    #skills hr {
+        border: 2px solid var(--pink);
+        width: 300px;
+        margin: auto;
+    }
+
+    .task-list:after {
+        content: "";
+        position: absolute;
+        background: var(--pink);
+        height: 100%;
+        width: 2px;
+        top: 0;
+        left: 20px;
+        z-index: 1;
+    }
+    
+    .task-list li {
+        margin-bottom: 30px;
+        padding-left: 70px;
+        position: relative;
+    
+        &:before {
+            content: '';
+            display: block;
+            height: 42px;
+            width: 42px;
+            border-radius: 50%;
+            border: 2px solid var(--pink);
+            background-color: var(--pink);
+            position: absolute;
+            left: 0;
+        }
+    }
 }
 
 @media (min-width: 576px) {
