@@ -52,12 +52,46 @@ a {
 
 #about h1 {
     font-size: 2em;
-    padding-top: 15px;
+    padding-top: 10px;
     color: var(--pink);
 }
 
 #about h2 {
     font-size: 1.2em;
+}
+
+.about-small-flex h2 {
+    color: var(--pink);
+}
+
+#about h3 {
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+#about h4 {
+    font-size: 0.9em;
+}
+
+.about-small-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-education {
+    padding-right: 75px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.about-interests {
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.about-interests ul {
+    padding-top: 6px;
 }
 
 .link-logos {
@@ -119,6 +153,12 @@ a {
     margin: auto;
 }
 
+.about-right hr {
+    border: 2px solid var(--pink);
+    width: 50%;
+    margin: auto;
+}
+
 .skill-icon {
     display: flex;
     align-items: center;
@@ -166,6 +206,7 @@ a {
     position: relative;
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
 }
 
 .task-list:after {
@@ -197,14 +238,92 @@ a {
     }
 }
 
+.exp-desc li {
+    margin-bottom: 5px;
+    padding-left: 0;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        border: 0 solid var(--white);
+        background-color: var(--white);
+        position: relative;
+        left: 0;
+    }
+}
+
+.exp-desc {
+    padding-bottom: 15px;
+}
+
 .task-list li:last-child {
     margin-bottom: 0;
 }
 
+footer {
+    height: 200px;
+}
+
 @media (max-width: 576px) {
+    #about, #skills, #experience {
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+    }
+    
+    /* .px-4, .gx-5 {
+        padding: 0 !important;
+    } */
+
     .exp-date {
         display: block;
         margin-bottom: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .about-left {
+        margin-top: 45px;
+        margin-bottom: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle-img {
+        justify-content: center;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .about-right {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .about-small-flex {
+        display: block;
+    }
+
+    .about-education {
+        padding: 0;
+        padding-top: 15px;
+    }
+    
+    .about-interests {
+        padding: 0;
+        padding-top: 15px;
     }
 
     #experience {
@@ -221,14 +340,28 @@ a {
 
     #experience hr {
         border: 2px solid var(--pink);
-        width: 300px;
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
         margin: auto;
+        margin-bottom: 15px;
     }
 
     #skills hr {
         border: 2px solid var(--pink);
-        width: 300px;
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
         margin: auto;
+    }
+
+    #about hr {
+        border: 2px solid var(--pink);
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: auto;
+        margin-bottom: 15px;
     }
 
     .task-list:after {
@@ -259,23 +392,43 @@ a {
             left: 0;
         }
     }
+
+    .exp-desc li {
+        margin-bottom: 5px;
+        padding-left: 0;
+        position: relative;
+    
+        &:before {
+            content: '';
+            display: block;
+            height: 0;
+            width: 0;
+            border-radius: 50%;
+            border: 0 solid var(--white);
+            background-color: var(--white);
+            position: relative;
+            left: 0;
+        }
+    }
 }
 
 @media (min-width: 576px) {
     #about {
         display: flex;
         flex-direction: row;
+        height: 100vh;
     }
 
     .about-left {
-        width: 50%;
-        margin-left: 200px;
+        width: 30%;
+        margin-left: 150px;
         margin-top: 90px;
     }
 
     .about-right {
-        width: 50%;
-        margin-right: 200px;
+        width: 70%;
+        margin-right: 150px;
+        margin-left: 100px;
         margin-top: 100px;
     }
 
@@ -286,5 +439,19 @@ a {
     .exp-date {     
         border-left: 2px solid var(--white);
         padding-left: 5px;
+    }
+
+    .row {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .col p {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .about-right hr {
+        visibility: hidden;
     }
 }
