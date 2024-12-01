@@ -188,7 +188,12 @@ a {
 
 #experience h1 {
     padding-top: 120px;
+    font-size: 2em;
     color: var(--pink);
+}
+
+#experience h2 {
+    font-size: 1.7em;
 }
 
 #experience hr {
@@ -268,16 +273,16 @@ footer {
     height: 200px;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
 @media (max-width: 576px) {
     #about, #skills, #experience {
         margin: 0;
         padding: 0;
         padding-top: 15px;
     }
-    
-    /* .px-4, .gx-5 {
-        padding: 0 !important;
-    } */
 
     .exp-date {
         display: block;
