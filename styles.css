@@ -60,6 +60,11 @@ a {
     font-size: 1.2em;
 }
 
+#about h3 {
+    font-size: 1.2em;
+    padding-top: 0;
+}
+
 .about-small-flex h2 {
     color: var(--pink);
 }
@@ -460,5 +465,43 @@ footer {
 
     .about-right hr {
         visibility: hidden;
+    }
+
+    #about h3 {
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+}
+
+
+@media only screen and (min-width: 1920px){
+    .about-left {
+        margin-left: 250px;
+    }
+
+    .about-right {
+        margin-right: 250px;
+        margin-left: 100px;
+    }
+
+    #about h1 {
+        padding-top: 30px;
+    }
+
+    #about h2 {
+        font-size: 1.4em;
+    }
+
+    #about h3 {
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+
+    #about h4 {
+        font-size: 1em;
+    }
+
+    #skills hr {
+        width: 650px;
     }
 }
