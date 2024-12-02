@@ -276,6 +276,25 @@ a {
 
 footer {
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logos span {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+footer h2 {
+    font-size: 1.4em;
+    padding-bottom: 15px;
+}
+
+footer h3 {
+    font-size: 1em;
+    padding-top: 25px;
 }
 
 .navbar-toggler-icon {
