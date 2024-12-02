@@ -288,6 +288,15 @@ footer {
         padding: 0;
         padding-top: 15px;
     }
+    
+    #about h1 {
+        padding-top: 20px;
+    }
+
+    #about h3 {
+        padding-top: 0;
+        font-size: 1.1em;
+    }
 
     .exp-date {
         display: block;
