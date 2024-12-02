@@ -418,10 +418,12 @@ footer {
 }
 
 @media (min-width: 576px) {
+    
     #about {
         display: flex;
         flex-direction: row;
-        height: 100vh;
+        align-items: center;
+        height: calc(100vh - 56px);
     }
 
     .about-left {
