@@ -80,6 +80,18 @@ a {
 
 #typing-text {
     color: var(--pink);
+    border-right: 2px solid var(--pink);
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+    animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .button {
