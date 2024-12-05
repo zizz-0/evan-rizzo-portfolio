@@ -88,6 +88,10 @@ a {
     animation: blink 0.9s step-end infinite;
 }
 
+.type-flex, .carousel-caption {
+    pointer-events: none;
+}
+
 @keyframes blink {
     50% {
         border-color: transparent;
@@ -101,6 +105,10 @@ a {
     display: inline;
     font-size: 4em;
     border: none;
+    z-index: 10;
+    pointer-events: auto;
+    width: 50px; /* Expand hit area horizontally */
+    height: 50px; /* Expand hit area vertically */
 }
 
 .prev, .next {
@@ -579,6 +587,15 @@ footer h3 {
 
 
 @media only screen and (min-width: 1920px){
+
+    .carousel-caption {
+        font-size: 3.2em;
+    }
+    
+    .typewriter {
+        font-size: 2.2em;
+    }
+
     .about-left {
         margin-left: 250px;
     }
