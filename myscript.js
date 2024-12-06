@@ -1,7 +1,16 @@
+let slideInterval;
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector('.prev').addEventListener('click', () => plusDivs(-1));
-  document.querySelector('.next').addEventListener('click', () => plusDivs(1));
-  setInterval(() => plusDivs(1), 3000);
+  document.querySelector('.prev').addEventListener('click', () => {
+    resetInterval();
+    plusDivs(-1);
+  });
+  document.querySelector('.next').addEventListener('click', () => {
+    resetInterval();
+    plusDivs(1);
+  });
+
+  startInterval();
 });
 
 var slideIndex = 1;
@@ -20,4 +29,13 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+}
+
+function startInterval() {
+  slideInterval = setInterval(() => plusDivs(1), 3000);
+}
+
+function resetInterval() {
+  clearInterval(slideInterval);
+  startInterval();
 }

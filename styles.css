@@ -110,8 +110,8 @@ a {
     border: none;
     z-index: 10;
     pointer-events: auto;
-    width: 50px; /* Expand hit area horizontally */
-    height: 50px; /* Expand hit area vertically */
+    width: 50px;
+    height: 50px;
 }
 
 .prev, .next {
@@ -392,11 +392,19 @@ footer h3 {
     }
 
     .carousel-caption {
-        top: 40%;
+        top: 43%;
+        align-items: center;
+        justify-content: center;
     }
 
     .type-flex {
         text-align: center;
+        top: -35%;
+    }
+
+    .button {
+        font-size: 2em;
+        top: 50%;
     }
 
     #typing-text {
