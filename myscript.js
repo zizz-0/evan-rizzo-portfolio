@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.prev').addEventListener('click', () => plusDivs(-1));
   document.querySelector('.next').addEventListener('click', () => plusDivs(1));
+  setInterval(() => plusDivs(1), 3000);
 });
 
 var slideIndex = 1;
