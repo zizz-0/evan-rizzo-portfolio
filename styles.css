@@ -1,11 +1,11 @@
 :root{
     --white: #eaedf4;
-    --background: #151f35;
-    --lightbackground: #0d1629;
+    --background: #050516;
+    --lightbackground: #050516;
     --lighttext: #b7c0d3;
     --blue: #172576;
-    --pink: #FF93C9;
-    --darkpink: #ad5a84;
+    --blue: #3790d4;
+    --darkblue: #295f88;
 }
 
 *{
@@ -39,15 +39,33 @@ a {
 }
 
 .brand a {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .brand a:hover {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .navbar a:hover {
-    color: var(--pink);
+    color: var(--blue);
+}
+
+.nav-hr {
+    border: 2px solid var(--white);
+    width: 100%;
+    margin: auto;
+    opacity: 1 !important;
+}
+
+.footer-hr {
+    border: 2px solid var(--blue);
+    width: 100%;
+    margin: auto;
+    opacity: 1 !important;
+}
+
+.brand a {
+    font-size: 1.5em;
 }
 
 .mySlides {
@@ -82,8 +100,8 @@ a {
 }
 
 #typing-text {
-    color: var(--pink);
-    border-right: 2px solid var(--pink);
+    color: var(--blue);
+    border-right: 2px solid var(--blue);
     padding-right: 5px;
     white-space: nowrap;
     overflow: hidden;
@@ -136,7 +154,7 @@ a {
 #about h1 {
     font-size: 2em;
     padding-top: 10px;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 #about h2 {
@@ -149,7 +167,7 @@ a {
 }
 
 .about-small-flex h2 {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 #about h3 {
@@ -200,16 +218,16 @@ a {
 }
 
 .resume:hover {
-    color: var(--pink);
-    border: 2px solid var(--pink);
+    color: var(--blue);
+    border: 2px solid var(--blue);
 }
 
 .mail:hover {
-    content:url("assets/imgs/logos/gmail-pink.png");
+    content:url("");
 }
 
 .linkedin:hover {
-    content:url("assets/imgs/logos/linkedin-pink.png");
+    content:url("");
 }
 
 .circle-img {
@@ -230,19 +248,19 @@ a {
 #skills h1 {
     font-size: 2em;
     padding-top: 15px;
-    color: var(--pink);
+    color: var(--blue);
     text-align: center;
     padding-top: 75px;
 }
 
 #skills hr {
-    border: 2px solid var(--pink);
+    border: 2px solid var(--blue);
     width: 50%;
     margin: auto;
 }
 
 .about-right hr {
-    border: 2px solid var(--pink);
+    border: 2px solid var(--blue);
     width: 50%;
     margin: auto;
 }
@@ -255,6 +273,7 @@ a {
     height: 100px;
     background-color: var(--lightbackground);
     border-radius: 50px;
+    /* border: 2px solid var(--blue); */
 }
 
 .skill-icon img {
@@ -277,7 +296,7 @@ a {
 #experience h1 {
     padding-top: 120px;
     font-size: 2em;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 #experience h2 {
@@ -285,13 +304,13 @@ a {
 }
 
 #experience hr {
-    border: 2px solid var(--pink);
+    border: 2px solid var(--blue);
     padding-left: 100;
     width: 50%;
 }
 
 .exp-title b {
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .task-list {
@@ -305,7 +324,7 @@ a {
 .task-list:after {
     content: "";
     position: absolute;
-    background: var(--pink);
+    background: var(--blue);
     height: 100%;
     width: 2px;
     top: 0;
@@ -324,8 +343,8 @@ a {
         height: 42px;
         width: 42px;
         border-radius: 50%;
-        border: 2px solid var(--pink);
-        background-color: var(--pink);
+        border: 2px solid var(--blue);
+        background-color: var(--blue);
         position: absolute;
         left: 0;
     }
@@ -358,26 +377,17 @@ a {
 }
 
 footer {
-    height: 200px;
+    height: 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.footer-logos span {
-    padding-right: 15px;
-    padding-left: 0;
-}
-
-footer h2 {
-    font-size: 1.4em;
-    padding-bottom: 15px;
-}
-
-footer h3 {
+footer span {
     font-size: 1em;
-    padding-top: 25px;
+    color: var(--blue);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navbar-toggler-icon {
@@ -481,7 +491,7 @@ footer h3 {
     }
 
     #experience hr {
-        border: 2px solid var(--pink);
+        border: 2px solid var(--blue);
         width: 100%;
         padding-right: 30px;
         padding-left: 30px;
@@ -490,7 +500,7 @@ footer h3 {
     }
 
     #skills hr {
-        border: 2px solid var(--pink);
+        border: 2px solid var(--blue);
         width: 100%;
         padding-right: 30px;
         padding-left: 30px;
@@ -498,7 +508,7 @@ footer h3 {
     }
 
     #about hr {
-        border: 2px solid var(--pink);
+        border: 2px solid var(--blue);
         width: 100%;
         padding-right: 30px;
         padding-left: 30px;
@@ -509,7 +519,7 @@ footer h3 {
     .task-list:after {
         content: "";
         position: absolute;
-        background: var(--pink);
+        background: var(--blue);
         height: 100%;
         width: 2px;
         top: 0;
@@ -528,8 +538,8 @@ footer h3 {
             height: 42px;
             width: 42px;
             border-radius: 50%;
-            border: 2px solid var(--pink);
-            background-color: var(--pink);
+            border: 2px solid var(--blue);
+            background-color: var(--blue);
             position: absolute;
             left: 0;
         }

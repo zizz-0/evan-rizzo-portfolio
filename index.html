@@ -11,23 +11,26 @@
   </head>
   <body class="bg-main">
     <main>
-        <nav class="navbar navbar-expand-lg fixed-top bg-nav">
+      <div class="nav-container fixed-top bg-nav">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <div class="brand">
-                <a class="navbar-brand text-c-pink" href="#">Evan Rizzo</a>
+                <a class="navbar-brand nav-name" href="#">Evan Rizzo</a>
               </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                  <!-- <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li> -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item"><a id="aboutnav" class="nav-link" href="#about" onclick="navColor('aboutnav')">About</a></li>
+                  <li class="nav-item"><a id="skillsnav" class="nav-link" href="#skills" onclick="navColor('skillsnav')">Skills</a></li>
+                  <li class="nav-item"><a id="experiencenav" class="nav-link" href="#experience" onclick="navColor('experiencenav')">Experience</a></li>
               </div>
             </div>
           </nav>
+          <hr class="nav-hr">
+        </div>
+
           <div class="carousel gx-5 pt-5 vh-100">
             <img class="mySlides" src="assets/imgs/placeholder1.jpg" style="width: 100%;">
             <img class="mySlides" src="assets/imgs/placeholder2.jpg" style="width: 100%; display: none;">
@@ -135,13 +138,10 @@
                 </li>
             </ul>
           </div>
+          <hr class="footer-hr">
           <footer class="bg-nav">
-            <h2>Let's connect!</h2>
-            <div class="footer-logos">
-              <span><a href="https://www.linkedin.com/in/eprandolph/" target="_blank"><img class="linkedin" src="assets/imgs/logos/linkedin.png" width="50px"></a></span>
-              <span><a href="mailto:randolph.eric.p@gmail.com" target="_blank"><img class="mail" src="assets/imgs/logos/gmail.png" width="50px"></a></span>
-            </div>
-            <h3>potential message here</h3>
+            <span>email@example.com</span>
+            <span>XXX-XXX-XXXX</span>
           </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
